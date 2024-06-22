@@ -2,6 +2,10 @@
 #A-Z = 65-90
 #a-z = 97-122
 #0-9 = 48-57
+#This is not the most efficient way to write the
+#alphanumerics It would be accomplished by loops that
+#use factors of ASCII value
+#Eg: 65=5*13 instead of 6*10+5 and so on
 
 #Uppercase letters
 >++++++[->++++++++++<]>+++++.       #A : 65 = 6*10+5
