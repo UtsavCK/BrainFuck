@@ -1,21 +1,35 @@
 #Brainfuck code to add two one digit numbers
 #and get one digit sum
 
-#Store ASCII of 0 ie 48 in cell2
->+++++
-[->++++++++++<]
->--
-
-#input in cell3 and cell4
+#Input in cell3 and cell4 and subtract 48
+>>++++++
 >,
 >,
+<<[->-------->--------<<]
 
-#subtract 48 from both inputs and add 48 to
-#cell1
-<<[->->-<<<+>]
+#Add value of cell3 to cell4
+>[->+<].
 
-#add value of cell4 to cell3
->>[-<+>]
+#Separate numbers as done in multiply
+[-]+
+>
+>++++++++++
+<
+[
+   -
+   >-
+   [>>>]
+   ++++++++++
+   <<+
+   [<<<]
+   >>>>
+]
+<-
+>++++++++++
+>
+[-<->]
 
-#add 48 to cell3 and cell2
-<<<[->+>+<<]>>.
+#Convert to ASCII
+<<<++++++
+[->++++++++>++++++++<<]
+>.>.
